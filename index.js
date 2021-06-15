@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(port, function() {
+server.listen(PORT, function() {
   console.log("Server listening on : ", PORT);
   const socketService = new SocketService();
   socketService.attachServer(server);
